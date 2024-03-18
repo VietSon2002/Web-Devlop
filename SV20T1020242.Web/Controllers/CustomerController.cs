@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SV20T1020242.BusinessLayers;
 using SV20T1020242.DomainModels;
 using SV20T1020242.Web.Models;
@@ -6,6 +7,7 @@ using SV20T1020242.Web.Models;
 
 namespace SV20T1020242.Web.Controllers
 {
+    [Authorize(Roles =$"{WebUserRoles.Administrator},{WebUserRoles.Employee}")]
     public class CustomerController : Controller
     {
         const int PAGE_SIZE = 20;
@@ -29,7 +31,6 @@ namespace SV20T1020242.Web.Controllers
 
         public IActionResult Search(PaginationSearchInput input)
         {
-            // nho check null thi quay ve mac dinh
             int rowCount = 0;
             var data = CommonDataService.ListOfCustomers(out rowCount, input.Page, input.PageSize, input.SearchValue ?? "");
 
@@ -131,6 +132,3 @@ namespace SV20T1020242.Web.Controllers
     }
 
 }
-/* tương tự thiết kế giao diện bổ sung cập nhật đối với:
- nhà cung câp, người giao hàng, loại hàng*/
-/*ctrl r r laf chonj het chu giong nhau*/

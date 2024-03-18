@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -13,6 +13,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SV20T1020242.DomainModels\SV20T1020242.DomainModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="E:\Code\LTWeb\20t1020242\SV20T1020242.DataLayers\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="E:\Code\LTWeb\20t1020242\SV20T1020242.DataLayers\.editorconfig" />
   </ItemGroup>
 
 </Project>

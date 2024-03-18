@@ -27,9 +27,9 @@ E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\SV20T10202
 E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\SV20T1020242.BusinessLayers.AssemblyInfoInputs.cache
 E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\SV20T1020242.BusinessLayers.AssemblyInfo.cs
 E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\SV20T1020242.BusinessLayers.csproj.CoreCompileInputs.cache
-E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\SV20T1020242.BusinessLayers.sourcelink.json
 E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\SV20T102.EFDDA246.Up2Date
 E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\SV20T1020242.BusinessLayers.dll
 E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\refint\SV20T1020242.BusinessLayers.dll
 E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\SV20T1020242.BusinessLayers.pdb
 E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\ref\SV20T1020242.BusinessLayers.dll
+E:\Code\LTWeb\20t1020242\SV20T1020242.BusinessLayers\obj\Debug\net6.0\SV20T1020242.BusinessLayers.sourcelink.json

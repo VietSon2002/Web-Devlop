@@ -1,32 +1,69 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SV20T1020242.BusinessLayers;
 using SV20T1020242.DomainModels;
+using SV20T1020242.Web.Models;
 using System.Diagnostics;
 
 namespace SV20T1020242.Web.Controllers
 {
+    [Authorize(Roles = $"{WebUserRoles.Administrator}")]
     public class EmployeeController : Controller
     {
         const int PAGE_SIZE = 9;
+        const string CREATE_TITLE = "Bổ sung nhân viên";
+        const string EMPLOYEE_SEARCH = "employee_search";
 
-        public IActionResult Index(int page = 1, string searchValue = "")
+        public IActionResult Index()
         {
-            int rowCount = 0;
-            var data = CommonDataService.ListOfEmployees(out rowCount, page, PAGE_SIZE, searchValue ?? "");
-
-            var model = new Models.EmployeeSearchResult()
+            Models.PaginationSearchInput? input = ApplicationContext.GetSessionData<PaginationSearchInput>(EMPLOYEE_SEARCH);
+            if (input == null)
             {
-                Page = page,
-                PageSize = PAGE_SIZE,
-                SearchValue = searchValue ?? "",
+                input = new PaginationSearchInput()
+                {
+                    Page = 1,
+                    PageSize = PAGE_SIZE,
+                    SearchValue = ""
+                };
+            }
+            return View(input);
+
+        }
+        public IActionResult Search(PaginationSearchInput input)
+        {
+            if (input == null)
+            {
+                input = new PaginationSearchInput
+                {
+                    Page = 1,
+                    PageSize = PAGE_SIZE,
+                    SearchValue = ""
+                };
+            }
+
+            if (string.IsNullOrWhiteSpace(input.SearchValue))
+            {
+                input.SearchValue = null;
+            }
+
+            int rowCount = 0;
+            var data = CommonDataService.ListOfEmployees(out rowCount, input.Page, input.PageSize, input.SearchValue ?? "");
+
+            var model = new EmployeeSearchResult()
+            {
                 RowCount = rowCount,
+                Page = input.Page,
+                PageSize = input.PageSize,
+                SearchValue = input.SearchValue ?? "",
                 Data = data
             };
+
+            ApplicationContext.SetSessionData(EMPLOYEE_SEARCH, input);
             return View(model);
         }
         public IActionResult Create()
         {
-            ViewBag.Title = "Bổ sung nhân viên";
+            ViewBag.Title = CREATE_TITLE;
             var model = new Employee()
             {
                 EmployeeID = 0,

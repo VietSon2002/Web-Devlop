@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S/M7eZ39hQhKyus5fIvWL/mKKjyFpSlj63SQJAUeK+k=",
+  "Hash": "umTM0/Ya+uhpWbKEHEMUwDiUJofgj/F8W16lMa6SL5U=",
   "Source": "SV20T1020242.Web",
   "BasePath": "_content/SV20T1020242.Web",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "E:\\Code\\LTWeb\\20t1020242\\SV20T1020242.Web\\wwwroot\\images\\employees\\429945033_729663225970487_1191629629189141396_n.jpg",
+      "SourceId": "SV20T1020242.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Code\\LTWeb\\20t1020242\\SV20T1020242.Web\\wwwroot\\",
+      "BasePath": "_content/SV20T1020242.Web",
+      "RelativePath": "images/employees/429945033_729663225970487_1191629629189141396_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\employees\\429945033_729663225970487_1191629629189141396_n.jpg"
+    },
+    {
       "Identity": "E:\\Code\\LTWeb\\20t1020242\\SV20T1020242.Web\\wwwroot\\images\\employees\\anh-avatar-facebook-70.jpg",
       "SourceId": "SV20T1020242.Web",
       "SourceType": "Discovered",
@@ -110,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\employees\\anh-avatar-facebook-70.jpg"
+    },
+    {
+      "Identity": "E:\\Code\\LTWeb\\20t1020242\\SV20T1020242.Web\\wwwroot\\images\\employees\\avatar.png",
+      "SourceId": "SV20T1020242.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Code\\LTWeb\\20t1020242\\SV20T1020242.Web\\wwwroot\\",
+      "BasePath": "_content/SV20T1020242.Web",
+      "RelativePath": "images/employees/avatar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\employees\\avatar.png"
     },
     {
       "Identity": "E:\\Code\\LTWeb\\20t1020242\\SV20T1020242.Web\\wwwroot\\images\\employees\\nophoto.png.png",

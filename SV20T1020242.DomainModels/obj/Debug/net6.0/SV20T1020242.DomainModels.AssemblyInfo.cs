@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SV20T1020242.DomainModels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3696aee7e85bfb26b32b2cdf6e2a46b602f59179")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d529d07e9927f12d0151b9a947ff93cd8710d180")]
 [assembly: System.Reflection.AssemblyProductAttribute("SV20T1020242.DomainModels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SV20T1020242.DomainModels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

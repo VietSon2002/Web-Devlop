@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\Code\\LTWeb\\20t1020242\\SV20T1020242.Web\\wwwroot\\images\\employees\\429945033_729663225970487_1191629629189141396_n.jpg",
+      "PackagePath": "staticwebassets\\images\\employees\\429945033_729663225970487_1191629629189141396_n.jpg"
+    },
+    {
       "Id": "E:\\Code\\LTWeb\\20t1020242\\SV20T1020242.Web\\wwwroot\\images\\employees\\anh-avatar-facebook-70.jpg",
       "PackagePath": "staticwebassets\\images\\employees\\anh-avatar-facebook-70.jpg"
+    },
+    {
+      "Id": "E:\\Code\\LTWeb\\20t1020242\\SV20T1020242.Web\\wwwroot\\images\\employees\\avatar.png",
+      "PackagePath": "staticwebassets\\images\\employees\\avatar.png"
     },
     {
       "Id": "E:\\Code\\LTWeb\\20t1020242\\SV20T1020242.Web\\wwwroot\\images\\employees\\nophoto.png.png",

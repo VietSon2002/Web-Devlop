@@ -18,6 +18,7 @@ namespace SV20T1020242.BusinessLayers
         private static readonly ICommonDAL<Shipper> shipperDB;
         private static readonly ICommonDAL<Employee> employeeDB;
         private static readonly ICommonDAL<Product> productDB;
+
         /// <summary>
         /// ctor( static constructor hoạt động như thế nào ? cách viết?)
         /// </summary>
@@ -30,7 +31,6 @@ namespace SV20T1020242.BusinessLayers
             supplierDB = new SupplierDAL(connectionString);
             shipperDB = new ShipperDAL(connectionString);
             employeeDB = new EmployeeDAL(connectionString);
-            //  productDB = new ProductDAL(connectionString);
         }
 
         //============================ Province =========================================
@@ -341,63 +341,63 @@ namespace SV20T1020242.BusinessLayers
 
         //============================ Product =========================================
 
-        /*  /// <summary>
-          ///Tìm kiếm và lấy ds khách hàng
-          /// </summary>
-          /// <param name="rowCount">Tham số đầu ra cho biết số dòng dữ liệu tìm được</param>
-          /// <param name="page">Trang cần hiển thị</param>
-          /// <param name="pageSize">Số dòng trên mỗi trang(0 nếu không phân trang)</param>
-          /// <param name="searchValue">Giá trị tìm kiếm (Rỗng nếu lấy toàn bộ khách hàng)</param>
-          /// <returns></returns>
-          public static List<Product> ListOfProducts(out int rowCount, int page = 1, int pageSize = 0, string searchValue = "")
-          {
-              rowCount = productDB.Count(searchValue);
-              return productDB.List(page, pageSize, searchValue).ToList();
-          }
-          /// <summary>
-          /// Lấy thông tin cửa 1 khách hàng theo mã khách hàng
-          /// </summary>
-          /// <param name="id"></param>
-          /// <returns></returns>
-          public static Product? GetProduct(int id)
-          {
-              return productDB.Get(id);
-          }
-          /// <summary>
-          /// Bổ súng 1 khách hàng mới. hàm trả về mã của khách hàng mới được bổ sung
-          /// (hàm trả về -1 nếu email bị trùng, trả về giá trị 0 nếu lỗi)
-          /// </summary>
-          /// <param name="data"></param>
-          /// <returns></returns>
-          public static int AddProduct(Product data)
-          {
-              return productDB.Add(data);
-          }
-          public static bool UpdateProduct(Product data)
-          {
-              return productDB.Update(data);
-          }
-          /// <summary>
-          /// xóa 1 khách hàng ( nếu khách hàng đó không có dữ liệu liên quan)
-          /// </summary>
-          /// <param name="id"></param>
-          /// <returns></returns>
-          public static bool DeleteProduct(int id)
-          {
-              if (productDB.IsUsed(id))
-                  return false;
-              return productDB.Delete(id);
-          }
-          /// <summary>
-          /// Kiểm tra xem 1 khách hàng hiện có dữ liệu liên quan hay không?
-          /// </summary>
-          /// <param name="id"></param>
-          /// <returns></returns>
-          public static bool IsUsedProduct(int id)
-          {
-              return productDB.IsUsed(id);
-          }
-  */
+        /// <summary>
+        ///Tìm kiếm và lấy ds khách hàng
+        /// </summary>
+        /// <param name="rowCount">Tham số đầu ra cho biết số dòng dữ liệu tìm được</param>
+        /// <param name="page">Trang cần hiển thị</param>
+        /// <param name="pageSize">Số dòng trên mỗi trang(0 nếu không phân trang)</param>
+        /// <param name="searchValue">Giá trị tìm kiếm (Rỗng nếu lấy toàn bộ khách hàng)</param>
+        /// <returns></returns>
+        public static List<Product> ListOfProducts(out int rowCount, int page = 1, int pageSize = 0, string searchValue = "")
+        {
+            rowCount = productDB.Count(searchValue);
+            return productDB.List(page, pageSize, searchValue).ToList();
+        }
+        /// <summary>
+        /// Lấy thông tin cửa 1 khách hàng theo mã khách hàng
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public static Product? GetProduct(int id)
+        {
+            return productDB.Get(id);
+        }
+        /// <summary>
+        /// Bổ súng 1 khách hàng mới. hàm trả về mã của khách hàng mới được bổ sung
+        /// (hàm trả về -1 nếu email bị trùng, trả về giá trị 0 nếu lỗi)
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public static int AddProduct(Product data)
+        {
+            return productDB.Add(data);
+        }
+        public static bool UpdateProduct(Product data)
+        {
+            return productDB.Update(data);
+        }
+        /// <summary>
+        /// xóa 1 khách hàng ( nếu khách hàng đó không có dữ liệu liên quan)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public static bool DeleteProduct(int id)
+        {
+            if (productDB.IsUsed(id))
+                return false;
+            return productDB.Delete(id);
+        }
+        /// <summary>
+        /// Kiểm tra xem 1 khách hàng hiện có dữ liệu liên quan hay không?
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public static bool IsUsedProduct(int id)
+        {
+            return productDB.IsUsed(id);
+        }
+
     }
 }
 

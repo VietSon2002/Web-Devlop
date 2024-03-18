@@ -135,7 +135,6 @@ E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\SV20T1020242.Web.cspr
 E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\SV20T1020242.Web.MvcApplicationPartsAssemblyInfo.cache
 E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\SV20T1020242.Web.RazorAssemblyInfo.cache
 E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\SV20T1020242.Web.RazorAssemblyInfo.cs
-E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\SV20T1020242.Web.sourcelink.json
 E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\staticwebassets.build.json
 E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\staticwebassets.development.json
 E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\staticwebassets\msbuild.SV20T1020242.Web.Microsoft.AspNetCore.StaticWebAssets.props
@@ -149,3 +148,4 @@ E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\scopedcss\projectbund
 E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\SV20T102.4C826445.Up2Date
 E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\SV20T1020242.Web.genruntimeconfig.cache
 E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\ref\SV20T1020242.Web.dll
+E:\Code\LTWeb\20t1020242\SV20T1020242.Web\obj\Debug\net6.0\SV20T1020242.Web.sourcelink.json

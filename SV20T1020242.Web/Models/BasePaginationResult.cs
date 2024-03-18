@@ -29,11 +29,6 @@ namespace SV20T1020242.Web.Models
     public class CustomerSearchResult : BasePaginationResult
     {
         public List<Customer> Data { get; set; } = new List<Customer>();
-
-        /* public static implicit operator CustomerSearchResult(CustomerSearchResult v)
-         {
-             throw new NotImplementedException();
-         }*/
     }
     public class CategorySearchResult : BasePaginationResult
     {

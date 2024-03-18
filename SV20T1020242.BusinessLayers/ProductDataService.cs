@@ -1,7 +1,7 @@
-﻿using SV20T1020242.BusinessLayers;
+﻿using SV20T1020242.DataLayers;
 using SV20T1020242.DataLayers.SQLServer;
-using SV20T1020242.DataLayers;
 using SV20T1020242.DomainModels;
+
 
 namespace SV20T1020242.BusinessLayers
 {
@@ -91,15 +91,5 @@ namespace SV20T1020242.BusinessLayers
         {
             return productDB.DeleteAttribute(id);
         }
-
-
-
-
-
-
-
-
-
-
     }
 }
